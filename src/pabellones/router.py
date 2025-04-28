@@ -1,0 +1,1 @@
+'''Pabellones module core components, here is where all the endpoints are defined.'''

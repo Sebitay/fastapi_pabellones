@@ -1,0 +1,1 @@
+'''Authentication module specific database models.'''

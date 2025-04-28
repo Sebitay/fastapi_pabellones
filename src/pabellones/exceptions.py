@@ -1,0 +1,1 @@
+'''Pabellones module specific exceptions and error handling.'''

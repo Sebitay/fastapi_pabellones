@@ -1,0 +1,1 @@
+'''Pabellones module non-business logic functions.'''

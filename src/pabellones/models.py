@@ -1,0 +1,1 @@
+'''Pabellones module specific database models.'''

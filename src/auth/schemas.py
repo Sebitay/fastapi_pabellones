@@ -1,0 +1,1 @@
+'''Authentification module specific pydantic models.'''

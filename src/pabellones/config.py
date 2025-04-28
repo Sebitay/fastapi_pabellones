@@ -1,0 +1,1 @@
+'''Pabellones module configuration, like environment variables, secret keys, and other settings.'''
