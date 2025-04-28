@@ -1,12 +1,18 @@
-'''global database models'''
+'''Global database models'''
 
-from sqlmodel import Field, SQLModel, Session
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import declarative_base
 
+Base = declarative_base()
 
-class Pabellon(SQLModel, table=True):
-    id: int = Field(default=None, primary_key=True)
-    nombre: str
-    especialidad: str
+class Pabellon(Base):
+    __tablename__ = "pabellon"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    nombre = Column(String, nullable=False)
+    especialidad = Column(String, nullable=False)
 
     def __repr__(self):
-        return f'Pabellon(id={self.id}, nombre={self.nombre}, capacidad={self.capacidad}, ubicacion={self.ubicacion}, descripcion={self.descripcion})'
+        return (
+            f"Pabellon(id={self.id}, nombre={self.nombre}, especialidad={self.especialidad})"
+        )
